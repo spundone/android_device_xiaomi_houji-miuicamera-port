@@ -44,10 +44,20 @@ Users coming from the KernelSU module should remove it and the LSPosed module fi
 | `configs/` | Privileged permissions, hidden-API allowlist, power-save allowlist |
 | `sepolicy/vendor/platform_app.te` | Lets the camera (`platform_app`, `platform_app_36`) reach Xiaomi's background save service and post-processing HAL, and the camera HAL |
 | `system.prop`, `product.prop` | Properties the camera reads, commented out where the 6.4 tree already sets them |
+| `leica/` | Leica Essential's files (below), installed to `/system/etc/xcam17/leica`, with `leica.mk`, the libraries as `prebuilt_etc` modules, and `config.fs` making its three helper programs executable |
 
-## What's not included
+## Leica Essential
 
-- **Leica Essential looks** (Essential Moment). They're rendered by a community port's code, which isn't redistributed. The mode stays hidden.
+Essential Moment (More > Essential Moment) takes photos in the 17 Ultra's M9 Iconic CCD, M3 B&W film and M10R Modern vintage looks. houji's HAL can't render them, so the community Leica port of camera 6.8 (`com.kobbin.leica`) renders them in the app after the shot, using the Leica algorithms from Xiaomi's Leica app for the 17 Ultra. `leica/` carries that port's processor (`classes11.dex`, `classes12.dex`), its native libraries and helper programs, and its models. The patched camera loads them when present and shows the mode; without `leica/`, the mode stays hidden.
+
+- JPEG photos only (Settings > Photo format), about 3 to 5 s each.
+- The port's AI style model needs the Snapdragon 8 Elite Gen 5, so its fallback tone is used on the Xiaomi 14.
+- Its notices (toasts) are in Chinese.
+
+`aosp/tools/make-device-tree.sh --leica` in houji-miuicamera-port writes `leica/` from a copy of the port.
+
+## Other notes
+
 - **The camera's region is CN.** Its China-only extras stay; only the consent check is patched.
 
 ## Status
@@ -56,4 +66,4 @@ The same patched APK runs on houji (Infinity X 4.0, Android 17) in place of the 
 
 ## Legal
 
-The APK is Xiaomi's, patched; Xiaomi and Leica own their trademarks. The tree's own files are Apache-2.0.
+The APK is Xiaomi's, patched. `leica/` is from the community Leica port and contains Xiaomi's and Leica's code and models. Xiaomi and Leica own their trademarks. The tree's own files are Apache-2.0.

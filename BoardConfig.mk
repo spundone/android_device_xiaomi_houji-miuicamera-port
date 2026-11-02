@@ -11,3 +11,8 @@ TARGET_PRODUCT_PROP += $(MIUICAMERA_PORT_PATH)/product.prop
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(MIUICAMERA_PORT_PATH)/sepolicy/vendor
+
+# Leica Essential: the port's helper programs must be executable
+ifneq ($(wildcard $(MIUICAMERA_PORT_PATH)/leica/config.fs),)
+TARGET_FS_CONFIG_GEN += $(MIUICAMERA_PORT_PATH)/leica/config.fs
+endif

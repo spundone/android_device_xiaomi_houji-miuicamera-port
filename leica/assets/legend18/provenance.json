@@ -1,0 +1,26 @@
+{
+  "leica_filter_param_m3.bin": {
+    "source_sha256": "d7586c92c5317123314ce23f5c333530ebbae6f10880989160dddb1cbd85af97",
+    "apk_sha256": "6e9217ee8c59872a3d700614681c30742df01d9bc9b44b7f2a170eeaab68052b",
+    "shading_records": 20,
+    "neutral_gain_removed": 1.0,
+    "original_bytes": 93330,
+    "apk_bytes": 93170
+  },
+  "leica_filter_param_m9_snapshot.bin": {
+    "source_sha256": "188f07de45a625333a18b657747c3ff9cda7e507e4418b08860b0d97bda1e5ac",
+    "apk_sha256": "60643c2747a05e2b6c5266461a6c4a0b06d7236f15b4b8d61637015420125013",
+    "shading_records": 55,
+    "neutral_gain_removed": 1.0,
+    "original_bytes": 1686542,
+    "apk_bytes": 1686102
+  },
+  "leica_filter_param_m10r_snapshot.bin": {
+    "source_sha256": "7f6ab019e7d9332a8aeea760d7b78e31dfe52a3a5f5ed1d1cf43875cf8f7957d",
+    "apk_sha256": "9713e4f6310b27b4e2db9d9c82c327ab7dc4aadbf49ffc805427e14ac80981c4",
+    "shading_records": 55,
+    "neutral_gain_removed": 1.0,
+    "original_bytes": 1598108,
+    "apk_bytes": 1597668
+  }
+}

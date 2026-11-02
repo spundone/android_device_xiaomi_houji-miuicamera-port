@@ -1,0 +1,26 @@
+{
+  "assets/leica-v43-ui/sample_M9.webp": {
+    "source": "res/drawable-xhdpi/legendary_m9.webp",
+    "sha256": "1773c910a091749c25c3f41948ceebbf93eccd74fc5faf8c2b6d771b1776defe"
+  },
+  "assets/leica-v43-ui/sample_M3.webp": {
+    "source": "res/drawable-xhdpi/legendary_m3.webp",
+    "sha256": "501349dec9f97d3d847c3d4d630f583c98ac69c917ec0005ac9f08823384bab4"
+  },
+  "assets/leica-v43-ui/camera_M9.webp": {
+    "source": "res/drawable/legendary_leica_camera.webp",
+    "sha256": "7a9e634fa5b6cc70866f9b92cc291ec5e9f17ea95a888593e66a1a70281d1274"
+  },
+  "assets/leica-v43-ui/camera_M3.webp": {
+    "source": "res/drawable/legendary_leica_film_camera.webp",
+    "sha256": "dd6b358ff9cc1b118f73b3bdf6bb8bb607ae48dd8cf88d37cd77e4a9e2fdb907"
+  },
+  "res/drawable/legendary_m9_leica_state.xml": {
+    "source": "res/drawable/legendary_m9_state.xml",
+    "sha256": "7b6d12c497b38b8935df1db7b59c0986fd223b4b4e66fbdfb44dcd3905ee4254"
+  },
+  "res/drawable/legendary_m3_leica_state.xml": {
+    "source": "res/drawable/legendary_m3_state.xml",
+    "sha256": "73a99183531a00f48b370425858a0b851f66383c6f6ec3825921bbd5f4ba9694"
+  }
+}
